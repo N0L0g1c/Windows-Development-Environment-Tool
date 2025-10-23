@@ -10,7 +10,7 @@ param(
 )
 
 # Script URL (replace with actual repository URL)
-$ScriptUrl = "https://raw.githubusercontent.com/your-username/windows-dev-setup/main/setup.ps1"
+$ScriptUrl = "https://raw.githubusercontent.com/N0L0g1c/Windows-Development-Environment-Tool/main/setup.ps1"
 
 # Download and execute the main script
 try {

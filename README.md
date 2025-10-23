@@ -33,10 +33,10 @@ python run-gui.py
 ### PowerShell Version
 ```powershell
 # Download and run (easiest way)
-iwr -useb https://raw.githubusercontent.com/your-username/windows-dev-setup/main/setup.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/N0L0g1c/Windows-Development-Environment-Tool/main/setup.ps1 | iex
 
 # Or download first, then run
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-username/windows-dev-setup/main/setup.ps1" -OutFile "setup.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/N0L0g1c/Windows-Development-Environment-Tool/main/setup.ps1" -OutFile "setup.ps1"
 .\setup.ps1
 ```
 
