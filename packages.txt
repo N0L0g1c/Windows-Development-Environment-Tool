@@ -1,0 +1,24 @@
+# Windows Dev Environment Packages
+# Custom package list for development setup
+
+# Essential tools
+git
+nodejs
+python
+vscode
+# cursor  # Uncomment if you prefer Cursor over VS Code
+
+# Development tools
+postman
+docker-desktop
+windows-terminal
+
+# Optional tools
+7zip
+notepad++
+dbeaver
+fiddler
+
+# PowerShell modules
+posh-git
+oh-my-posh

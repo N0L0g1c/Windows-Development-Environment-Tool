@@ -1,0 +1,116 @@
+{
+  "version": "1.0.0",
+  "description": "Windows Dev Environment Setup Configuration",
+  "packageManagers": {
+    "preferred": "auto",
+    "choco": {
+      "enabled": true,
+      "installPath": "C:\\ProgramData\\chocolatey"
+    },
+    "scoop": {
+      "enabled": true,
+      "installPath": "$env:USERPROFILE\\scoop"
+    },
+    "winget": {
+      "enabled": true,
+      "installPath": "built-in"
+    }
+  },
+  "stacks": {
+    "web-dev": {
+      "enabled": true,
+      "packages": [
+        "git",
+        "nodejs",
+        "vscode",
+        "googlechrome",
+        "firefox",
+        "postman",
+        "docker-desktop"
+      ],
+      "editorOptions": {
+        "vscode": true,
+        "cursor": true,
+        "both": false
+      },
+      "vscodeExtensions": [
+        "ms-python.python",
+        "ms-vscode.vscode-typescript-next",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json"
+      ]
+    },
+    "data-science": {
+      "enabled": true,
+      "packages": [
+        "git",
+        "python",
+        "vscode",
+        "jupyter",
+        "anaconda3"
+      ],
+      "editorOptions": {
+        "vscode": true,
+        "cursor": true,
+        "both": false
+      },
+      "pythonPackages": [
+        "numpy",
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "scikit-learn",
+        "jupyter"
+      ]
+    },
+    "dotnet": {
+      "enabled": true,
+      "packages": [
+        "git",
+        "dotnet-sdk",
+        "visualstudio2022community",
+        "vscode",
+        "sql-server-management-studio"
+      ]
+    },
+    "mobile-dev": {
+      "enabled": true,
+      "packages": [
+        "git",
+        "nodejs",
+        "vscode",
+        "android-studio",
+        "flutter"
+      ]
+    },
+    "devops": {
+      "enabled": true,
+      "packages": [
+        "git",
+        "docker-desktop",
+        "kubernetes-cli",
+        "terraform",
+        "azure-cli",
+        "vscode"
+      ]
+    }
+  },
+  "environment": {
+    "setupPath": true,
+    "setupGitEditor": true,
+    "setupNodePath": true,
+    "setupPythonPath": true
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "file": "$env:TEMP\\dev-setup.log"
+  },
+  "features": {
+    "autoDetectExisting": true,
+    "skipIfInstalled": true,
+    "createDesktopShortcuts": false,
+    "configureStartMenu": false
+  }
+}
